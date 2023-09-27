@@ -1,5 +1,7 @@
 def mfp(m)
     sum = 0
+  #  m=m.chomp
+    m=m.to_i;
     (1..m).each{|i|
         x = i
         mul = 1
@@ -18,8 +20,8 @@ def mfp(m)
         end
     }
     if val>ans then ans = val end 
-    printf("%d\n",ans)
+    return ans
 end
 # a = gets
-# a = a.chomp
-# mfp(a.to_i)
+# # a = a.chomp
+# puts mfp(a)
